@@ -1,33 +1,38 @@
 import React, { Component } from 'react'
 import {
-    Button,
-    Container,
-    Divider,
-    Grid,
-    Header,
-    Icon,
-    Image,
-    List,
-    Menu,
     Segment,
-    Visibility,
+    Grid,
+    Rating,
+    Icon,
+    Menu
   } from 'semantic-ui-react'
+
+import SiteHeader from './site-header.js'
 
 export default class ItineraryHeader extends Component {
     render() {
         return(
-            <Segment inverted vertical>
-                <Container>
-                    <Menu inverted stackable size='large'>
+            <Segment>
+                <SiteHeader />
+                <Grid>
+                    <Grid.Column width={8}>
+                        <h3>3 Days Itinerary for Singapore</h3>
+                        <Rating icon='star' defaultRating={3} maxRating={5} />
+                        <p>Submitted by: I think this can go away for now</p>
+                    </Grid.Column>
+                    <Grid.Column width={4}>
+                        <Menu icon='labeled' vertical>
                         <Menu.Item>
-                            <h3>The Travellers</h3>
+                            <Icon name='print' />
+                            Print
                         </Menu.Item>
-                        <Menu.Item as='a' active>Home</Menu.Item>
-                        <Menu.Item position='right'>
-                            //Search
+                        <Menu.Item>
+                            <Icon name='bookmark' />
+                            Bookmark
                         </Menu.Item>
-                    </Menu>
-                </Container>
+                        </Menu>
+                    </Grid.Column>
+                </Grid>
             </Segment>
         )
     }
