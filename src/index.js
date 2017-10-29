@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './semantic-dist/semantic.min.css';
+import Itinerary from './Itinerary';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Itinerary />, document.getElementById('root'));
 registerServiceWorker();
