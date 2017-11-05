@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
-    Grid,
-    Segment
+    Container,
+    Grid
   } from 'semantic-ui-react'
 
 import ItineraryDay from './itinerary-day.js'
@@ -9,8 +9,8 @@ import ItineraryDay from './itinerary-day.js'
 export default class ItineraryHeader extends Component {
     render() {
         return(
-            <Segment>
-                <Grid columns={4} stackable>
+            <Container>
+                <Grid columns={3}>
                     <Grid.Row>
                         <Grid.Column>
                             <ItineraryDay />
@@ -24,14 +24,12 @@ export default class ItineraryHeader extends Component {
                         <Grid.Column>
                             <ItineraryDay />
                         </Grid.Column>
-                    </Grid.Row>
-                    <Grid.Row>
                         <Grid.Column>
                             <ItineraryDay />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Segment>
+            </Container>
         )
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ItineraryHeader from './components/itinerary-header.js'
-import ItineraryContent from './components/itinerary-content.js'
-import SiteFooter from './components/site-footer.js'
+import ItineraryHeader from '../itinerary-header.js'
+import ItineraryContent from '../itinerary-content.js'
+import SiteFooter from '../site-footer.js'
 
 export default class Itinerary extends Component {
     render() {
