@@ -14,6 +14,7 @@ import {
     Image as ImageComponent,
     Label
   } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 
 import SiteHeader from '../site-header.js'
 import SiteFooter from '../site-footer.js'
@@ -42,7 +43,7 @@ export default class Itinerary extends Component {
       <Item.Image src='/assets/images/wireframe/image.png' />
 
       <Item.Content>
-        <Item.Header as='a'>12 Years a Slave</Item.Header>
+        <Item.Header as={Link} to='/Itinerary'>12 Years a Slave</Item.Header>
         <Item.Meta>
           <span className='cinema'>Union Square 14</span>
         </Item.Meta>

@@ -10,6 +10,11 @@ import {
 import SiteHeader from './site-header.js'
 
 export default class ItineraryHeader extends Component {
+
+/*     constructor(props) {
+        super(props)
+    } */
+
     render() {
         return(
             <div>
@@ -17,8 +22,8 @@ export default class ItineraryHeader extends Component {
                 <Container style={{ marginTop: '7em' }}>
                     <Grid>
                         <Grid.Column width={12}>
-                            <h3>3 Days Itinerary for Singapore</h3>
-                            <Rating icon='star' defaultRating={3} maxRating={5} />
+                            <h3>{this.props.days} Days Itinerary for {this.props.destination}</h3>
+                            <Rating icon='star' defaultRating={this.props.rating} maxRating={5} />
                             <p>Submitted by: I think this can go away for now</p>
                         </Grid.Column>
                         <Grid.Column width={4}>
